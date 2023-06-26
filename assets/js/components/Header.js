@@ -15,11 +15,7 @@ let Header =
     components: {Nav},
     template: 
     `<header>
-        <nav>
-            <ul>
-                <Nav v-for="link in links" :content="link.content"/>
-            </ul>
-        </nav>
+        <Nav :links="links"/>
     </header>`
 };
 

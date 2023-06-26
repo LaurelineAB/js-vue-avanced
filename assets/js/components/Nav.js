@@ -2,10 +2,14 @@ let Nav =
 {
     props : 
     [
-        "content"
+        "links"
     ],
     template: 
-    `<li>{{content}}</li>`
+    `<nav>
+        <ul>
+            <li v-for="link in links">{{link.content}}</li>
+        </ul>
+    </nav>`
 };
 
 export {Nav};
